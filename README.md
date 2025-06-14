@@ -47,42 +47,6 @@ npm run dev
 - `GET /api/tasks/project/:projectId` - Получить задачи по ID проекта
 - `GET /api/tasks/status/:status` - Получить задачи по статусу
 
-## Примеры запросов и ответов
-
-### Создание пользователя
-```http
-POST /api/users
-
-{
-    "name": "Иван Иванов",
-    "email": "ivan@example.com"
-}
-```
-
-### Создание проекта
-```http
-POST /api/projects
-
-{
-    "name": "Мой проект",
-    "description": "Описание проекта",
-    "userId": "123"
-}
-```
-
-### Создание задачи
-```http
-POST /api/tasks
-
-{
-    "title": "Завершить API",
-    "description": "Завершить реализацию API",
-    "status": "pending",
-    "projectId": "123",
-    "userId": "456"
-}
-```
-
 ## Хранение данных
 
 Приложение использует хранилище в памяти, все данные будут сброшены при перезапуске сервера.
